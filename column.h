@@ -39,19 +39,19 @@ struct column {
 };
 typedef struct column COLUMN;
 
-COLUMN *create_column(ENUM_TYPE type, char *title);
-int insert_value(COLUMN *col, void *value);
-void delete_column(COLUMN **col);
-void print_col(COLUMN *col);
-void convert_value(COLUMN *col, unsigned long long int i, char *str, int size);
-//void sort(COLUMN* col, int sort_dir);
-void print_col_by_index(COLUMN *col);
-void erase_index(COLUMN *col);
-int check_index(COLUMN *col);
-void update_index(COLUMN *col);
-int occurence(COLUMN *col, void *val);
-void * get_val_at_index(COLUMN *col, void *ind);
-int  higher(COLUMN *col, void *val);
-int  lower(COLUMN *col, void *val);
-int search_value_in_column(COLUMN *col, void *val);
+COLUMN *create_column(ENUM_TYPE type, char *title); //done
+int insert_value(COLUMN *col, void *value); // need to be done
+void delete_column(COLUMN **col); //need to be done
+void print_col(COLUMN *col); //done
+void convert_value(COLUMN *col, unsigned long long int i, char *str, int size); //done
+void sort(COLUMN* col, int sort_dir); //idk how to do it
+void print_col_by_index(COLUMN *col); //done
+void erase_index(COLUMN *col); // idk how to do it
+int check_index(COLUMN *col); // idk how to do it
+void update_index(COLUMN *col); // idk how to do it
+int occurence(COLUMN *col, void *val); //done
+void * get_val_at_index(COLUMN *col, int ind); //done
+int  higher(COLUMN *col, void *val); //done
+int  lower(COLUMN *col, void *val); //done
+int search_value_in_column(COLUMN *col, void *val); //done
 #endif COLUMN_H

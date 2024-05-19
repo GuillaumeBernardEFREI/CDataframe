@@ -11,7 +11,7 @@ COLUMN *create_column(ENUM_TYPE type, char *title){
     col->column_type=type;
     col->title=title;
     col->data=NULL;
-    col->index = (unsigned long long int *)malloc(sizeof(int));
+    col->index = NULL;
     return col;
 }
 
@@ -33,33 +33,25 @@ int insert_value(COLUMN *col, void *value){
         col->max_size+=256;
     }
     //*(int*)malloc (sizeof(int));
-    col->index[col->size]=(col->size);
+
     if(col->data==NULL){
         (col->data)=(COL_TYPE **)malloc (sizeof(int)*col->max_size);
     }
+    if (col->index==NULL) {
+        col->index = (unsigned long long int *) malloc(sizeof(unsigned long long int) * 256);
+    }
+    col->index[col->size]=(col->size);
+
+    (col->data)[col->size] = (COL_TYPE *) malloc(sizeof(COL_TYPE));
+
+
 
     switch (col->column_type) {
         case UINT:
             (col->data[col->size])->uint_value = *( unsigned int*)value;
             break;
         case INT:
-            //printf("%d\n",*( int*)value);
-            (col->data)[col->size]=(COL_TYPE *)malloc (sizeof(COL_TYPE));
-            ((col->data)[col->size])->int_value= *((int *)value);
-            //((col->data)[col->size])->int_value = *( int*)value;
-
-            //printf("szszs%d\n",*( int*)value);
-
-
-
-            //col->data[col->size] = ;
-            //*((int*)col->data[col->size])= *((int*)value);
-
-            //(col->data[col->size])->int_value=0;
-
-
-
-
+            ((col->data)[col->size])->int_value = *((int *) value);
             break;
         case CHAR:
             (col->data[col->size])->char_value = *(char*)value;
@@ -110,10 +102,7 @@ void delete_column(COLUMN **col){
 * @param4: Maximum size of the string
 */
 void convert_value(COLUMN *col, unsigned long long int i, char *str, int size) {
-
-    union column_type *value  = (col->data[i]);
-    printf("%d",value->uint_value);
-    printf("op");
+    COL_TYPE *value  = (col->data[i]);
     switch (col->column_type) {
         case UINT:
             snprintf(str, size,"%d", value->uint_value);
@@ -143,35 +132,106 @@ void convert_value(COLUMN *col, unsigned long long int i, char *str, int size) {
 void print_col_by_index(COLUMN *col){
     for(int i=0; i<col->size-1;i++){
         char str[30];
-        //printf("\n %d ",(int)col->index[i+1]);
-        convert_value(col,(int)(col->index[i+1]),str,30);
+
+        convert_value(col,(int)(col->index[i]),str,30);
         printf("[%d] %s\n",i,str);
     }
 }
-int check_egality(ENUM_TYPE column_type, void *val1,void *val2){
+
+void * get_val_at_index(COLUMN *col, int ind){
+    if(col->index==NULL){return NULL;}
+    return col->data[col->index[ind]];
+}
+
+int is_inferior(ENUM_TYPE column_type, void *val1,union column_type *val2){
+    //perform val1<val2
+
     switch (column_type) {
         case UINT:
-            return *(unsigned int *) val1 == *(unsigned int *) val2;
+            return *(unsigned int *) val1 < (val2)->uint_value;
         case INT:
-            return *(int *) val1 == *(int *) val2;
+            return *(int *) val1 < (val2)->int_value;
         case CHAR:
-            return *(char *) val1 == *(char *) val2;
+            return *(char *) val1 < (val2)->char_value;
         case FLOAT:
-            return *(float *) val1 == *(float *) val2;
+            return *(float *) val1 < (val2)->float_value;
         case DOUBLE:
-            return *(double *) val1 == *(double *) val2;
+            return *(double *) val1 < (val2)->double_value;
         case STRING:
-            return strcmp(*(char **) val1, *(char **) val2);
+            for(int i=0;i<100;i++){
+                if((*(char **) val2)[i]==0){
+                    return 0;
+                }
+                if((*(char **) val1)[i]==0){
+                    return 1;
+                }
+                if((*(char **) val2)[i]>(*(char **) val1)[i]){
+                    return 0;
+                }
+            }
         case STRUCTURE:
-            //custom equality check
+            //custom inferiority check depending on your structure
             return 1;
     }
+    return 0;
+
+}
+
+int check_egality(ENUM_TYPE column_type, void *val1,union column_type *val2){
+    switch (column_type) {
+        case UINT:
+            return *(unsigned int *) val1 == (val2)->uint_value;
+        case INT:
+            return *(int *) val1 == (val2)->int_value;
+        case CHAR:
+            return *(char *) val1 == (val2)->char_value;
+        case FLOAT:
+            return *(float *) val1 == (val2)->float_value;
+        case DOUBLE:
+            return *(double *) val1 == (val2)->double_value;
+        case STRING:
+            return strcmp(*(char **) val1, val2->string_value);
+        case STRUCTURE:
+            //custom equality check depending on your structure
+            return 1;
+    }
+    return 0;
+}
+
+int search_value_in_column(COLUMN *col, void *val){
+    for(int i=0; i<col->size-1;i++){
+
+        if(check_egality(col->column_type,val,(col->data[col->index[i]]))){
+            return i;
+        }
+    }
+    return -1;
+}
+int lower(COLUMN *col, void *x){
+    int count=0;
+    for(int i=0;i<col->size;i++){
+        if(is_inferior(col->column_type,(col->data[i]),x) && !check_egality(col->column_type,x,(col->data[i]))){
+            count++;
+        }
+    }
+    return count;
+}
+
+int higher(COLUMN *col, void *x){
+    int count=0;
+    for(int i=0;i<col->size;i++){
+        if(is_inferior(col->column_type,x,(col->data[i])) && !check_egality(col->column_type,x,(col->data[i]))){
+            count++;
+        }
+    }
+    return count;
 }
 int occurence(COLUMN *col, void *x){
     int occ=0;
     for(int i=0;i<col->size;i++){
-        if(check_egality(col->column_type,x,&(col->data[i]))){
+        if(check_egality(col->column_type,x,(col->data[i]))){
             occ++;
+
         }
     }
     return occ;
