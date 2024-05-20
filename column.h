@@ -27,16 +27,6 @@ struct column {
     ENUM_TYPE column_type;
     COL_TYPE **data; // array of pointers to stored data
     unsigned long long int *index;
-    // index valid
-    // 0 : no index
-    // -1 : invalid index
-    // 1 : valid index
-    int valid_index;
-    // direction de tri Ascendant ou Déscendant
-    // 0 : ASC
-    // 1 : DESC
-    int sort_dir;
-    // array of integers
 };
 typedef struct column COLUMN;
 
@@ -45,15 +35,12 @@ int insert_value(COLUMN *col, void *value); // need to be done
 void delete_column(COLUMN **col); //need to be done
 void print_col(COLUMN *col); //done
 void convert_value(COLUMN *col, unsigned long long int i, char *str, int size); //done
-void sort(COLUMN* col, int sort_dir); //idk how to do it
 void print_col_by_index(COLUMN *col); //done
-void erase_index(COLUMN *col); // idk how to do it
-int check_index(COLUMN *col); // idk how to do it
-void update_index(COLUMN *col); // idk how to do it
 int occurence(COLUMN *col, void *val); //done
 void * get_val_at_index(COLUMN *col, int ind); //done
 int  higher(COLUMN *col, void *val); //done
 int  lower(COLUMN *col, void *val); //done
 int search_value_in_column(COLUMN *col, void *val); //done
+//void rename(COLUMN *col);
 
 #endif //COLUMN_H

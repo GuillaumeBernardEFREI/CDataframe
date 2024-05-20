@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\samue\CLionProjects\CDataframe-Guigui
+CMAKE_SOURCE_DIR = C:\Users\guill\CLionProjects\CDataframe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\samue\CLionProjects\CDataframe-Guigui\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\guill\CLionProjects\CDataframe\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\samue\CLionProjects\CDataframe-Guigui\cmake-build-debug\CMakeFiles C:\Users\samue\CLionProjects\CDataframe-Guigui\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\guill\CLionProjects\CDataframe\cmake-build-debug\CMakeFiles C:\Users\guill\CLionProjects\CDataframe\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\samue\CLionProjects\CDataframe-Guigui\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\guill\CLionProjects\CDataframe\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -224,30 +224,6 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CDataframe.dir\build.make CMakeFiles/CDataframe.dir/main.c.s
 .PHONY : main.c.s
 
-main2.obj: main2.c.obj
-.PHONY : main2.obj
-
-# target to build an object file
-main2.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CDataframe.dir\build.make CMakeFiles/CDataframe.dir/main2.c.obj
-.PHONY : main2.c.obj
-
-main2.i: main2.c.i
-.PHONY : main2.i
-
-# target to preprocess a source file
-main2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CDataframe.dir\build.make CMakeFiles/CDataframe.dir/main2.c.i
-.PHONY : main2.c.i
-
-main2.s: main2.c.s
-.PHONY : main2.s
-
-# target to generate assembly for a file
-main2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CDataframe.dir\build.make CMakeFiles/CDataframe.dir/main2.c.s
-.PHONY : main2.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -269,9 +245,6 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... main2.obj
-	@echo ... main2.i
-	@echo ... main2.s
 .PHONY : help
 
 

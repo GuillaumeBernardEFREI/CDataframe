@@ -1,9 +1,9 @@
 #ifndef LIST_H
 #define LIST_H
-
+#include "column.h"
 
 struct lnode_ {
-    void *data; // Pointer to a column
+    COLUMN *data; // Pointer to a column
     struct lnode_ *prev;
     struct lnode_ *next;
 };

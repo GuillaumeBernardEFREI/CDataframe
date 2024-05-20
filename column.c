@@ -83,9 +83,7 @@ void delete_column(COLUMN **col){
     free((**(col)).title);
     free(&((**(col)).size));
     free(&((**(col)).max_size));
-    free(((**(col)).index));
-    free(&((**(col)).valid_index));
-    free(&((**(col)).sort_dir));
+    free(&((**(col)).index));
 
 
 // now we free up the colomn's space
