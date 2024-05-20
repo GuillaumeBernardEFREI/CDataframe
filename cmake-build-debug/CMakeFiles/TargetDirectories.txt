@@ -1,3 +1,0 @@
-C:/Users/guill/CLionProjects/CDataframe/cmake-build-debug/CMakeFiles/CDataframe.dir
-C:/Users/guill/CLionProjects/CDataframe/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/guill/CLionProjects/CDataframe/cmake-build-debug/CMakeFiles/rebuild_cache.dir

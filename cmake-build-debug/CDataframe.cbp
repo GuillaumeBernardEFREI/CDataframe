@@ -97,6 +97,9 @@
 		<Unit filename="C:/Users/samue/CLionProjects/CDataframe-Guigui/main.c">
 			<Option target="CDataframe"/>
 		</Unit>
+		<Unit filename="C:/Users/samue/CLionProjects/CDataframe-Guigui/main2.c">
+			<Option target="CDataframe"/>
+		</Unit>
 		<Unit filename="C:/Users/samue/CLionProjects/CDataframe-Guigui/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

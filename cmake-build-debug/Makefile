@@ -224,6 +224,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CDataframe.dir\build.make CMakeFiles/CDataframe.dir/main.c.s
 .PHONY : main.c.s
 
+main2.obj: main2.c.obj
+.PHONY : main2.obj
+
+# target to build an object file
+main2.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CDataframe.dir\build.make CMakeFiles/CDataframe.dir/main2.c.obj
+.PHONY : main2.c.obj
+
+main2.i: main2.c.i
+.PHONY : main2.i
+
+# target to preprocess a source file
+main2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CDataframe.dir\build.make CMakeFiles/CDataframe.dir/main2.c.i
+.PHONY : main2.c.i
+
+main2.s: main2.c.s
+.PHONY : main2.s
+
+# target to generate assembly for a file
+main2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CDataframe.dir\build.make CMakeFiles/CDataframe.dir/main2.c.s
+.PHONY : main2.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -245,6 +269,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... main2.obj
+	@echo ... main2.i
+	@echo ... main2.s
 .PHONY : help
 
 

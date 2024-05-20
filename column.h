@@ -1,6 +1,7 @@
 
 #ifndef COLUMN_H
 #define COLUMN_H
+
 enum enum_type
 {
     NULLVAL = 1 , UINT, INT, CHAR, FLOAT, DOUBLE, STRING, STRUCTURE
@@ -54,4 +55,5 @@ void * get_val_at_index(COLUMN *col, int ind); //done
 int  higher(COLUMN *col, void *val); //done
 int  lower(COLUMN *col, void *val); //done
 int search_value_in_column(COLUMN *col, void *val); //done
-#endif COLUMN_H
+
+#endif //COLUMN_H

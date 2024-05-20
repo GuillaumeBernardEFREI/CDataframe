@@ -15,7 +15,7 @@ CDATAFRAME *create_cdataframe(ENUM_TYPE *cdftype, int size){
         title = "test";
         COLUMN* col = (COLUMN *) create_column(cdftype[i], title);
         LNODE* ptr_col = lst_create_lnode(col);
-        lst_insert_tail((list *) cdf, ptr_col);
+        lst_insert_tail((LIST *) cdf, ptr_col);
     }
     return cdf;
 }
@@ -31,5 +31,6 @@ void delete_cdataframe(CDATAFRAME **cdf){
     }
     free(*cdf);
 }
+
 
 

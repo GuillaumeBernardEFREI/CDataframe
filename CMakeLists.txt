@@ -10,4 +10,5 @@ add_executable(CDataframe main.c
         list.h
         cdataframe.c
         cdataframe.h
+        main2.c
 )
