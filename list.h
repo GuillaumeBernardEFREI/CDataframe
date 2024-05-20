@@ -1,13 +1,7 @@
 #ifndef LIST_H
 #define LIST_H
-/**
-* Élément lnode
-*/
-typedef struct lnode_ {
-    void *data;
-    struct lnode_ *prev;
-    struct lnode_ *next;
-} lnode;
+#include "cdataframe.h"
+
 /**
 * Une liste
 */
