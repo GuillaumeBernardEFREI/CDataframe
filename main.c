@@ -80,7 +80,10 @@ int main() {
             } while (insertOption<=0 || insertOption>3);
             if(insertOption==1) {
             }
-            else(insertOption==1)
+            else if(insertOption==1)
+            {
+
+            }
         } else if (choice==4){
             delete_cdataframe(&cdataframe);
             cdataframe= NULL;

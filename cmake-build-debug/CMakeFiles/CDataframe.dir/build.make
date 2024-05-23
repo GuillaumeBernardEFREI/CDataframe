@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\samue\CLionProjects\CDataframe
+CMAKE_SOURCE_DIR = C:\Users\guill\CLionProjects\CDataframe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\samue\CLionProjects\CDataframe\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\guill\CLionProjects\CDataframe\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CDataframe.dir/depend.make
@@ -69,60 +69,60 @@ include CMakeFiles/CDataframe.dir/progress.make
 include CMakeFiles/CDataframe.dir/flags.make
 
 CMakeFiles/CDataframe.dir/main.c.obj: CMakeFiles/CDataframe.dir/flags.make
-CMakeFiles/CDataframe.dir/main.c.obj: C:/Users/samue/CLionProjects/CDataframe/main.c
+CMakeFiles/CDataframe.dir/main.c.obj: C:/Users/guill/CLionProjects/CDataframe/main.c
 CMakeFiles/CDataframe.dir/main.c.obj: CMakeFiles/CDataframe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\samue\CLionProjects\CDataframe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/CDataframe.dir/main.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CDataframe.dir/main.c.obj -MF CMakeFiles\CDataframe.dir\main.c.obj.d -o CMakeFiles\CDataframe.dir\main.c.obj -c C:\Users\samue\CLionProjects\CDataframe\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\guill\CLionProjects\CDataframe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/CDataframe.dir/main.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CDataframe.dir/main.c.obj -MF CMakeFiles\CDataframe.dir\main.c.obj.d -o CMakeFiles\CDataframe.dir\main.c.obj -c C:\Users\guill\CLionProjects\CDataframe\main.c
 
 CMakeFiles/CDataframe.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CDataframe.dir/main.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\samue\CLionProjects\CDataframe\main.c > CMakeFiles\CDataframe.dir\main.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\guill\CLionProjects\CDataframe\main.c > CMakeFiles\CDataframe.dir\main.c.i
 
 CMakeFiles/CDataframe.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CDataframe.dir/main.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\samue\CLionProjects\CDataframe\main.c -o CMakeFiles\CDataframe.dir\main.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\guill\CLionProjects\CDataframe\main.c -o CMakeFiles\CDataframe.dir\main.c.s
 
 CMakeFiles/CDataframe.dir/column.c.obj: CMakeFiles/CDataframe.dir/flags.make
-CMakeFiles/CDataframe.dir/column.c.obj: C:/Users/samue/CLionProjects/CDataframe/column.c
+CMakeFiles/CDataframe.dir/column.c.obj: C:/Users/guill/CLionProjects/CDataframe/column.c
 CMakeFiles/CDataframe.dir/column.c.obj: CMakeFiles/CDataframe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\samue\CLionProjects\CDataframe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/CDataframe.dir/column.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CDataframe.dir/column.c.obj -MF CMakeFiles\CDataframe.dir\column.c.obj.d -o CMakeFiles\CDataframe.dir\column.c.obj -c C:\Users\samue\CLionProjects\CDataframe\column.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\guill\CLionProjects\CDataframe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/CDataframe.dir/column.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CDataframe.dir/column.c.obj -MF CMakeFiles\CDataframe.dir\column.c.obj.d -o CMakeFiles\CDataframe.dir\column.c.obj -c C:\Users\guill\CLionProjects\CDataframe\column.c
 
 CMakeFiles/CDataframe.dir/column.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CDataframe.dir/column.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\samue\CLionProjects\CDataframe\column.c > CMakeFiles\CDataframe.dir\column.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\guill\CLionProjects\CDataframe\column.c > CMakeFiles\CDataframe.dir\column.c.i
 
 CMakeFiles/CDataframe.dir/column.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CDataframe.dir/column.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\samue\CLionProjects\CDataframe\column.c -o CMakeFiles\CDataframe.dir\column.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\guill\CLionProjects\CDataframe\column.c -o CMakeFiles\CDataframe.dir\column.c.s
 
 CMakeFiles/CDataframe.dir/list.c.obj: CMakeFiles/CDataframe.dir/flags.make
-CMakeFiles/CDataframe.dir/list.c.obj: C:/Users/samue/CLionProjects/CDataframe/list.c
+CMakeFiles/CDataframe.dir/list.c.obj: C:/Users/guill/CLionProjects/CDataframe/list.c
 CMakeFiles/CDataframe.dir/list.c.obj: CMakeFiles/CDataframe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\samue\CLionProjects\CDataframe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/CDataframe.dir/list.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CDataframe.dir/list.c.obj -MF CMakeFiles\CDataframe.dir\list.c.obj.d -o CMakeFiles\CDataframe.dir\list.c.obj -c C:\Users\samue\CLionProjects\CDataframe\list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\guill\CLionProjects\CDataframe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/CDataframe.dir/list.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CDataframe.dir/list.c.obj -MF CMakeFiles\CDataframe.dir\list.c.obj.d -o CMakeFiles\CDataframe.dir\list.c.obj -c C:\Users\guill\CLionProjects\CDataframe\list.c
 
 CMakeFiles/CDataframe.dir/list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CDataframe.dir/list.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\samue\CLionProjects\CDataframe\list.c > CMakeFiles\CDataframe.dir\list.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\guill\CLionProjects\CDataframe\list.c > CMakeFiles\CDataframe.dir\list.c.i
 
 CMakeFiles/CDataframe.dir/list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CDataframe.dir/list.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\samue\CLionProjects\CDataframe\list.c -o CMakeFiles\CDataframe.dir\list.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\guill\CLionProjects\CDataframe\list.c -o CMakeFiles\CDataframe.dir\list.c.s
 
 CMakeFiles/CDataframe.dir/cdataframe.c.obj: CMakeFiles/CDataframe.dir/flags.make
-CMakeFiles/CDataframe.dir/cdataframe.c.obj: C:/Users/samue/CLionProjects/CDataframe/cdataframe.c
+CMakeFiles/CDataframe.dir/cdataframe.c.obj: C:/Users/guill/CLionProjects/CDataframe/cdataframe.c
 CMakeFiles/CDataframe.dir/cdataframe.c.obj: CMakeFiles/CDataframe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\samue\CLionProjects\CDataframe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/CDataframe.dir/cdataframe.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CDataframe.dir/cdataframe.c.obj -MF CMakeFiles\CDataframe.dir\cdataframe.c.obj.d -o CMakeFiles\CDataframe.dir\cdataframe.c.obj -c C:\Users\samue\CLionProjects\CDataframe\cdataframe.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\guill\CLionProjects\CDataframe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/CDataframe.dir/cdataframe.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CDataframe.dir/cdataframe.c.obj -MF CMakeFiles\CDataframe.dir\cdataframe.c.obj.d -o CMakeFiles\CDataframe.dir\cdataframe.c.obj -c C:\Users\guill\CLionProjects\CDataframe\cdataframe.c
 
 CMakeFiles/CDataframe.dir/cdataframe.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CDataframe.dir/cdataframe.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\samue\CLionProjects\CDataframe\cdataframe.c > CMakeFiles\CDataframe.dir\cdataframe.c.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\guill\CLionProjects\CDataframe\cdataframe.c > CMakeFiles\CDataframe.dir\cdataframe.c.i
 
 CMakeFiles/CDataframe.dir/cdataframe.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CDataframe.dir/cdataframe.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\samue\CLionProjects\CDataframe\cdataframe.c -o CMakeFiles\CDataframe.dir\cdataframe.c.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\guill\CLionProjects\CDataframe\cdataframe.c -o CMakeFiles\CDataframe.dir\cdataframe.c.s
 
 # Object files for target CDataframe
 CDataframe_OBJECTS = \
@@ -142,7 +142,7 @@ CDataframe.exe: CMakeFiles/CDataframe.dir/build.make
 CDataframe.exe: CMakeFiles/CDataframe.dir/linkLibs.rsp
 CDataframe.exe: CMakeFiles/CDataframe.dir/objects1.rsp
 CDataframe.exe: CMakeFiles/CDataframe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\samue\CLionProjects\CDataframe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable CDataframe.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\guill\CLionProjects\CDataframe\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable CDataframe.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CDataframe.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +154,6 @@ CMakeFiles/CDataframe.dir/clean:
 .PHONY : CMakeFiles/CDataframe.dir/clean
 
 CMakeFiles/CDataframe.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\samue\CLionProjects\CDataframe C:\Users\samue\CLionProjects\CDataframe C:\Users\samue\CLionProjects\CDataframe\cmake-build-debug C:\Users\samue\CLionProjects\CDataframe\cmake-build-debug C:\Users\samue\CLionProjects\CDataframe\cmake-build-debug\CMakeFiles\CDataframe.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\guill\CLionProjects\CDataframe C:\Users\guill\CLionProjects\CDataframe C:\Users\guill\CLionProjects\CDataframe\cmake-build-debug C:\Users\guill\CLionProjects\CDataframe\cmake-build-debug C:\Users\guill\CLionProjects\CDataframe\cmake-build-debug\CMakeFiles\CDataframe.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/CDataframe.dir/depend
 

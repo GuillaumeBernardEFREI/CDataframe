@@ -1,5 +1,5 @@
 CMakeFiles/CDataframe.dir/cdataframe.c.obj: \
- C:\Users\samue\CLionProjects\CDataframe\cdataframe.c \
+ C:\Users\guill\CLionProjects\CDataframe\cdataframe.c \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
@@ -23,6 +23,6 @@ CMakeFiles/CDataframe.dir/cdataframe.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/errno.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/string.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
- C:\Users\samue\CLionProjects\CDataframe\cdataframe.h \
- C:\Users\samue\CLionProjects\CDataframe\column.h \
- C:\Users\samue\CLionProjects\CDataframe\list.h
+ C:\Users\guill\CLionProjects\CDataframe\cdataframe.h \
+ C:\Users\guill\CLionProjects\CDataframe\column.h \
+ C:\Users\guill\CLionProjects\CDataframe\list.h

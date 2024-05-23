@@ -1,7 +1,9 @@
 # Projet CDataframe - S2
 
 Group members
+
 Guillaume BERNARD - @GuillaumeBernardEFREI - https://github.com/GuillaumeBernardEFREI
+
 Samuel MOLLIERE - @Samu7l - https://github.com/Samu7l
 
 Link of the project : https://github.com/GuillaumeBernardEFREI/CDataframe

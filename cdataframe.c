@@ -33,22 +33,44 @@ void delete_cdataframe(CDATAFRAME **cdf){
 }
 
 
-int get_cdataframe_cols_size(CDATAFRAME * cdf) {
-    LNODE *current = (cdf)->head;
+int get_cdataframe_cols_size(CDATAFRAME *cdf) {
+    LNODE *current = (*cdf).head;
     int ctn = 0;
     while (current != NULL) {
-        ctn ++;
-        current = current -> next;
+        current = current->next;
+        ctn++;
     }
     return ctn;
+
+}
+void display_columns_titles(CDATAFRAME *cdf)
+{
+    LNODE *current = (*cdf).head;
+    while (current != NULL) {
+        printf(" %s             ",current->data->title);
+        current = current->next;
+
+    }
+    printf("\n");
+
+}
+COLUMN * get_col(CDATAFRAME * cdf,int index){
+    LNODE *current = (*cdf).head;
+    for(int i=0;i<index;i++) {
+    current = current->next;
+    }
+    return  current->data;
 }
 
-COLUMN * get_col(CDATAFRAME * cdf,int index){
-    LNODE *current = (cdf)->head;
-    int ctn = 1;
-    while (ctn != index ) {
-        current = current -> next;
-        ctn ++;
+/*
+void delete_row(CDATAFRAME *cdf, int index){
+    int size = get_cdataframe_cols_size(cdf);
+    for (int i = 0; i < size; i++){
+        COL_TYPE * col = LNODE
+        while(col->data!=NULL) {
+
+        }
     }
-    return current;
 }
+
+*/
