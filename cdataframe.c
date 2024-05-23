@@ -16,6 +16,7 @@ CDATAFRAME *create_cdataframe(ENUM_TYPE *cdftype, int size){
         COLUMN* col = (COLUMN *) create_column(cdftype[i], title);
         LNODE* ptr_col = lst_create_lnode(col);
         lst_insert_tail((LIST *) cdf, ptr_col);
+
     }
     return cdf;
 }
@@ -26,10 +27,9 @@ void delete_cdataframe(CDATAFRAME **cdf){
         LNODE *next = current->next;
         COLUMN *col = (COLUMN *)current->data;
         delete_column(&col); //je pense qe c'est pas le bon argument
-        free(current);
         current = next;
     }
-    free(*cdf);
+    lst_delete_list(*cdf);
 }
 
 

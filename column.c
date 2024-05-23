@@ -80,7 +80,6 @@ int insert_value(COLUMN *col, void *value){
 */
 void delete_column(COLUMN **col){
 // attributes of the colomn
-    free((**(col)).title);
     free(&((**(col)).size));
     free(&((**(col)).max_size));
     free(&((**(col)).index));
