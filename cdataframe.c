@@ -33,4 +33,22 @@ void delete_cdataframe(CDATAFRAME **cdf){
 }
 
 
+int get_cdataframe_cols_size(CDATAFRAME * cdf) {
+    LNODE *current = (cdf)->head;
+    int ctn = 0;
+    while (current != NULL) {
+        ctn ++;
+        current = current -> next;
+    }
+    return ctn;
+}
 
+COLUMN * get_col(CDATAFRAME * cdf,int index){
+    LNODE *current = (cdf)->head;
+    int ctn = 1;
+    while (ctn != index ) {
+        current = current -> next;
+        ctn ++;
+    }
+    return current;
+}
